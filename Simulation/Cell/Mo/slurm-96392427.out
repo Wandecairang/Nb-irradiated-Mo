@@ -1,0 +1,143 @@
+srun: ROUTE: split_hostlist: hl=k20r3n[18-19] tree_width 0
+srun: ROUTE: split_hostlist: hl=k20r3n[18-19] tree_width 0
+srun: ROUTE: split_hostlist: hl=k20r3n[18-19] tree_width 0
+srun: ROUTE: split_hostlist: hl=k20r3n[18-19] tree_width 0
+ running on   64 total cores
+ distrk:  each k-point on   64 cores,    1 groups
+ distr:  one band on    1 cores,   64 groups
+ vasp.6.3.2 27Jun22 (build Jun 20 2023 10:49:10) complex                        
+  
+ POSCAR found type information on POSCAR Mo
+ POSCAR found :  1 types and       2 ions
+ scaLAPACK will be used
+ -----------------------------------------------------------------------------
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|     For optimal performance we recommend to set                             |
+|       NCORE = 2 up to number-of-cores-per-socket                            |
+|     NCORE specifies how many cores store one orbital (NPAR=cpu/NCORE).      |
+|     This setting can greatly improve the performance of VASP for DFT.       |
+|     The default, NCORE=1 might be grossly inefficient on modern             |
+|     multi-core architectures or massively parallel machines. Do your        |
+|     own testing! More info at https://www.vasp.at/wiki/index.php/NCORE      |
+|     Unfortunately you need to use the default for GW and RPA                |
+|     calculations (for HF NCORE is supported but not extensively tested      |
+|     yet).                                                                   |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+ -----------------------------------------------------------------------------
+|                                                                             |
+|               ----> ADVICE to this user running VASP <----                  |
+|                                                                             |
+|     You have a (more or less) 'small supercell' and for smaller cells       |
+|     it is recommended to use the reciprocal-space projection scheme!        |
+|     The real-space optimization is not efficient for small cells and it     |
+|     is also less accurate ...                                               |
+|     Therefore, set LREAL=.FALSE. in the INCAR file.                         |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR found type information on POSCAR Mo
+ POSCAR found :  1 types and       2 ions
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ... GRIDC
+ FFT: planning ... GRID_SOFT
+ FFT: planning ... GRID
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.273890431651E+02    0.27389E+02   -0.20602E+04  5376   0.459E+02
+DAV:   2    -0.159722241475E+02   -0.43361E+02   -0.43255E+02  7488   0.660E+01
+DAV:   3    -0.159900094960E+02   -0.17785E-01   -0.17791E-01  5632   0.163E+00
+DAV:   4    -0.159900150801E+02   -0.55841E-05   -0.55849E-05  9728   0.251E-02
+DAV:   5    -0.159900150795E+02    0.58753E-09   -0.20218E-11  5504   0.172E-05    0.344E+01
+RMM:   6    -0.216852205569E+02   -0.56952E+01   -0.41359E-01  5120   0.179E+00    0.137E+01
+RMM:   7    -0.218458428147E+02   -0.16062E+00   -0.17441E-01  5120   0.130E+00    0.739E+00
+RMM:   8    -0.218183714391E+02    0.27471E-01   -0.14057E-02  5120   0.397E-01    0.147E+00
+RMM:   9    -0.218152634829E+02    0.31080E-02   -0.38633E-03  5120   0.193E-01    0.995E-01
+RMM:  10    -0.218143004024E+02    0.96308E-03   -0.30287E-03  5120   0.198E-01    0.267E-01
+RMM:  11    -0.218151133688E+02   -0.81297E-03   -0.73767E-04  5119   0.992E-02    0.872E-02
+RMM:  12    -0.218151288249E+02   -0.15456E-04   -0.49618E-05  3458   0.277E-02
+   1 F= -.21815129E+02 E0= -.21815129E+02  d E =-.218151E+02  mag=     0.0001
+ curvature:   0.00 expect dE= 0.000E+00 dE for cont linesearch  0.000E+00
+ trial: gam= 0.00000 g(F)=  0.287E-59 g(S)=  0.107E-03 ort = 0.000E+00 (trialstep = 0.100E+01)
+ search vector abs. value=  0.107E-03
+ bond charge predicted
+ -----------------------------------------------------------------------------
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|     Tetrahedron method does not include variations of the Fermi             |
+|     occupations, so forces and stress will be inaccurate. We suggest        |
+|     using a different smearing scheme ISMEAR = 1 or 2 for metals in         |
+|     relaxations.                                                            |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.218231216764E+02   -0.80083E-02   -0.64303E-02  7552   0.786E-01    0.462E-01
+RMM:   2    -0.218226805201E+02    0.44116E-03   -0.65959E-04  5119   0.896E-02    0.796E-02
+RMM:   3    -0.218231299941E+02   -0.44947E-03   -0.16428E-04  4614   0.460E-02    0.681E-02
+RMM:   4    -0.218233173207E+02   -0.18733E-03   -0.15367E-05  2757   0.151E-02    0.230E-02
+RMM:   5    -0.218233737936E+02   -0.56473E-04   -0.95686E-07  1409   0.360E-03
+   2 F= -.21823374E+02 E0= -.21823374E+02  d E =-.824497E-02  mag=     0.0000
+ trial-energy change:   -0.008245  1 .order    0.000022   -0.000107    0.000151
+ step:   0.4143(harm=  0.4143)  dis= 0.00000  next Energy=   -21.815151 (dE=-0.222E-04)
+ bond charge predicted
+ -----------------------------------------------------------------------------
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|     Tetrahedron method does not include variations of the Fermi             |
+|     occupations, so forces and stress will be inaccurate. We suggest        |
+|     using a different smearing scheme ISMEAR = 1 or 2 for metals in         |
+|     relaxations.                                                            |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.218214898461E+02    0.18275E-02   -0.22381E-02  8576   0.465E-01    0.272E-01
+RMM:   2    -0.218190358879E+02    0.24540E-02   -0.21938E-04  5009   0.515E-02    0.470E-02
+RMM:   3    -0.218186652593E+02    0.37063E-03   -0.56132E-05  3017   0.268E-02    0.369E-02
+RMM:   4    -0.218185487666E+02    0.11649E-03   -0.45727E-06  2504   0.847E-03    0.219E-03
+RMM:   5    -0.218185274205E+02    0.21346E-04   -0.49781E-07  1016   0.259E-03
+   3 F= -.21818527E+02 E0= -.21818527E+02  d E =-.339860E-02  mag=    -0.0000
+ curvature:  -0.21 expect dE=-0.855E-05 dE for cont linesearch -0.855E-05
+ trial: gam= 0.00000 g(F)=  0.126E-60 g(S)=  0.413E-04 ort =-0.665E-04 (trialstep = 0.883E+00)
+ search vector abs. value=  0.413E-04
+ reached required accuracy - stopping structural energy minimisation
+ -----------------------------------------------------------------------------
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|     Tetrahedron method does not include variations of the Fermi             |
+|     occupations, so forces and stress will be inaccurate. We suggest        |
+|     using a different smearing scheme ISMEAR = 1 or 2 for metals in         |
+|     relaxations.                                                            |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+srun: ROUTE: split_hostlist: hl=k20r3n[18-19] tree_width 0
