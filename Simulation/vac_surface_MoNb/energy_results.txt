@@ -1,0 +1,2 @@
+vac_Mo -639.62876358    NGX,Y,Z   is equivalent  to a cutoff of  12.25, 12.25, 12.21 a.u.
+vac_Nb -639.90920641    NGX,Y,Z   is equivalent  to a cutoff of  12.25, 12.25, 12.21 a.u.

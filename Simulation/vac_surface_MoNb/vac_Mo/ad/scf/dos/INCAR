@@ -1,0 +1,25 @@
+###inital ###
+SYSTEM = Fe2O3
+ISTART = 1
+ICHARG = 11
+LORBIT = 11
+###Electronic Relaxatio###
+ISMEAR =  -5            (Gaussian smearing; metals:1)
+SIGMA  =  0.1        (Smearing value in eV; metals:0.2)
+NELM   =  100           (Max electronic SCF steps)
+NELMIN =  5           (Min electronic SCF steps)
+EDIFF  =  1E-6        (SCF energy convergence; in eV)
+GGA = PE
+LREAL = Auto
+PREC = Accurate
+ENCUT = 530
+#NEDOS= 值越大越平滑
+#NBANDS = NELECT/2+1
+###Ionic Relaxation###
+NSW    =  0         (Max electronic SCF steps)
+IBRION =  -1         (Algorithm: 0-MD; 1-Quasi)
+ISIF = 2
+ALGO = Normal
+NCORE = 4
+KPAR = 8
+LMAXMIX = 4

@@ -1,0 +1,50 @@
+srun: ROUTE: split_hostlist: hl=f12r1n10 tree_width 0
+ running on    4 total cores
+ distrk:  each k-point on    1 cores,    4 groups
+ distr:  one band on    1 cores,    1 groups
+ HIP runtime initialized ...    4 DCUs will be used
+ Created    4 streams on each DCU
+ vasp.6.3.2 27Jun22 (build Mar 15 2023 15:45:48) complex                        
+  
+ POSCAR found type information on POSCAR O 
+ POSCAR found :  1 types and       1 ions
+ Reading from existing POTCAR
+ scaLAPACK will be used selectively (only on CPU)
+ Reading from existing POTCAR
+ -----------------------------------------------------------------------------
+|                                                                             |
+|               ----> ADVICE to this user running VASP <----                  |
+|                                                                             |
+|     You have a (more or less) 'small supercell' and for smaller cells       |
+|     it is recommended to use the reciprocal-space projection scheme!        |
+|     The real-space optimization is not efficient for small cells and it     |
+|     is also less accurate ...                                               |
+|     Therefore, set LREAL=.FALSE. in the INCAR file.                         |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR found type information on POSCAR O 
+ POSCAR found :  1 types and       1 ions
+ Optimize memory usage for KPAR
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ... GRIDC
+ FFT: planning ... GRID_SOFT
+ FFT: planning ... GRID
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.490968941088E+02    0.49097E+02   -0.11041E+03   126   0.382E+02
+DAV:   2     0.885206548708E+01   -0.40245E+02   -0.39070E+02   168   0.594E+01
+DAV:   3     0.157207324698E+00   -0.86949E+01   -0.86924E+01    91   0.453E+01
+DAV:   4    -0.157675197312E+00   -0.31488E+00   -0.18229E+00    84   0.904E+00
+DAV:   5    -0.166932104175E+00   -0.92569E-02   -0.91270E-02    98   0.151E+00    0.679E-02
+DAV:   6    -0.167161931294E+00   -0.22983E-03   -0.32060E-03   105   0.334E-01    0.463E-02
+DAV:   7    -0.167223799511E+00   -0.61868E-04   -0.15353E-04   112   0.823E-02    0.664E-02
+DAV:   8    -0.167260396617E+00   -0.36597E-04   -0.63553E-05    84   0.493E-02    0.227E-02
+DAV:   9    -0.167347670476E+00   -0.87274E-04   -0.55867E-06    91   0.293E-02    0.731E-03
+DAV:  10    -0.167349627483E+00   -0.19570E-05   -0.43588E-06   105   0.169E-02    0.139E-03
+DAV:  11    -0.167349848368E+00   -0.22089E-06   -0.19092E-07   112   0.318E-03
+   1 F= -.16734985E+00 E0= -.90218689E-01  d E =-.154262E+00
+ writing wavefunctions
+ PROFILE, used timers:     225

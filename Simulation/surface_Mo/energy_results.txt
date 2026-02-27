@@ -1,0 +1,2 @@
+ab -659.99094259    NGX,Y,Z   is equivalent  to a cutoff of  12.60, 12.60, 13.03 a.u.
+magnetization -651.20872809    NGX,Y,Z   is equivalent  to a cutoff of  12.25, 12.25, 12.21 a.u.

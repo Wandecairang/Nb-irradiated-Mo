@@ -1,0 +1,1 @@
+ab -649.39369029    NGX,Y,Z   is equivalent  to a cutoff of  12.60, 12.60, 13.03 a.u.
